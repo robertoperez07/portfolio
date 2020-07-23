@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71a0f258c1f01408fb1edfd1e27c7cd6",
+    "revision": "af9904cfcb885c6200ee5e155b11d9da",
     "url": "/robertoperezsoriano.com/index.html"
   },
   {
-    "revision": "2bec7d43d239416e48fc",
+    "revision": "d95ad28888339f9a1b80",
     "url": "/robertoperezsoriano.com/static/css/main.7f324d9b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/robertoperezsoriano.com/static/js/2.a8ae0d56.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2bec7d43d239416e48fc",
-    "url": "/robertoperezsoriano.com/static/js/main.2db81b76.chunk.js"
+    "revision": "d95ad28888339f9a1b80",
+    "url": "/robertoperezsoriano.com/static/js/main.032c0307.chunk.js"
   },
   {
     "revision": "6abffa65e8bc3a65c459",

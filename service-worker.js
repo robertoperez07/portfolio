@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/robertoperezsoriano.com/precache-manifest.a6cd79b7eb0180abb4d403230e8f5515.js"
+  "/robertoperezsoriano.com/precache-manifest.d3dfecf8a736a8f1228cb164aa571879.js"
 );
 
 self.addEventListener('message', (event) => {
