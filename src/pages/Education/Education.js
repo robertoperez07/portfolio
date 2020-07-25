@@ -4,6 +4,7 @@ import { SectionTitle, Paragraph } from '../../styles';
 import { EducationItem, Institution, Degree } from './styles';
 
 const Education = ({ user }) => {
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   return (
     <Layout user={user}>
       <div>
@@ -18,7 +19,7 @@ const Education = ({ user }) => {
                 </Degree>{' '}
                 <span> &sdot; </span>
                 <span>
-                  {education.start.year} to {education.end.year}
+                {monthNames[education.end.month-1]} {education.end.year}
                 </span>
               </div>
               <Paragraph>{education.description.replace('\n\n', '\n')}</Paragraph>
