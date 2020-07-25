@@ -2,12 +2,13 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { SectionTitle, Paragraph, Pill } from "../../styles";
 import { ProfileLink } from "./styles";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../App.css';
 
 const Me = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle>Profiles</SectionTitle>
         <Paragraph>{user.basics.summary}</Paragraph>
       </div>
       <div>
@@ -24,6 +25,7 @@ const Me = ({ user }) => {
           {user.basics.profiles.map((profile, i) => (
             <ProfileLink key={profile.network}>
               {i !== 0 && " | "}
+              {networkIcon(profile.network)}
               <a href={profile.url} target="_blank" rel="noreferrer noopener">
                 {profile.network}
               </a>
@@ -34,5 +36,19 @@ const Me = ({ user }) => {
     </Layout>
   );
 };
+
+const networkIcon = ( network ) => {
+  console.log(network)
+  switch (network) {
+    case 'gitconnected':
+      return  <FontAwesomeIcon icon={['fas', 'code']} className='icon'/>
+    case 'GitHub':
+      return  <FontAwesomeIcon icon={['fab', 'github']} className='icon'/>
+    case 'LinkedIn':
+      return  <FontAwesomeIcon icon={['fab', 'linkedin']} className='icon'/>
+    default:
+      break;
+  }
+}
 
 export default Me;

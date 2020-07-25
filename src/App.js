@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Pages from './pages';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+
+// Adding to icon library.
+library.add(fab, faCode);
 
 function App() {
   const [user, setUser] = useState(null);
