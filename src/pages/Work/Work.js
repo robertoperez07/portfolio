@@ -25,6 +25,10 @@ const Work = ({ user }) => {
                   </span>
                 </div>
                 <Paragraph>{work.summary}</Paragraph>
+                <br/>
+                {work.highlights.map((highlight, i) => (
+                  <Paragraph>&bull; {highlight}</Paragraph>
+                ))}
               </WorkItem>
             ))}
         </ul>
