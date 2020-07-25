@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://robertoperez07.github.io/robertoperezsoriano.com",
+  "homepage": "http://robertoperez07.github.io",
   "dependencies": {
     "@carbon/icons-react": "^10.13.0",
     "@carbon/themes": "^10.14.0",
