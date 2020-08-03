@@ -5,7 +5,7 @@ import {SideNavItems, SideNavLink} from 'carbon-components-react/lib/components/
 import {StyledSideNav} from './styles';
 
 const items = [
-    {name: 'Me', path: '/'},
+    {name: 'About Me', path: '/'},
     {name: 'Projects', path: '/projects'},
     {name: 'Work', path: '/work'},
     {name: 'Education', path: '/education'},

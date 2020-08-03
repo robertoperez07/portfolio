@@ -38,14 +38,13 @@ const Me = ({ user }) => {
 };
 
 const networkIcon = ( network ) => {
-  console.log(network)
+  network = network.toLowerCase();
   switch (network) {
     case 'gitconnected':
       return  <FontAwesomeIcon icon={['fas', 'code']} className='icon'/>
-    case 'GitHub':
-      return  <FontAwesomeIcon icon={['fab', 'github']} className='icon'/>
-    case 'LinkedIn':
-      return  <FontAwesomeIcon icon={['fab', 'linkedin']} className='icon'/>
+    case 'github':
+    case 'linkedin':
+      return  <FontAwesomeIcon icon={['fab', network]} className='icon'/>
     default:
       break;
   }
